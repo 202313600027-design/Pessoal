@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="EDUMaker - Laboratório Maker de Tecnologia, Inovação e Educação do IFBA Campus Eunápolis">
+<title>EDUMaker | Laboratório Maker</title>
+<link rel="stylesheet" href="../css/index.css">
+
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NOTIFICATION -->
+<div class="notification" id="notification">
+  <span class="notification-icon">✓</span>
+  <span class="notification-text">Mensagem enviada com sucesso!</span>
+</div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-logo">
+   <img src="../img/Logo horizontal (BRANCA).png" alt="Logo">
+  </div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#hero">Início</a></li>
+    <li><a href="#historia">História</a></li>
+    <li><a href="#areas">Áreas</a></li>
+    <li><a href="#noticias">Notícias</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+  <div class="nav-toggle" id="navToggle">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  
+  <!-- Particles -->
+  <div id="particles"></div>
+
+  <!-- Circuit SVG decoration -->
+  <svg class="circuit" style="top:10%;left:5%;width:180px" viewBox="0 0 180 200">
+    <path d="M10 10 H60 V50 H120 V100 H80 V150 H140" stroke="#0084F5" stroke-width="1.5" fill="none"/>
+    <circle cx="60" cy="50" r="5" fill="none" stroke="#23F8B2" stroke-width="1.5"/>
+    <circle cx="120" cy="100" r="5" fill="none" stroke="#23F8B2" stroke-width="1.5"/>
+    <circle cx="80" cy="150" r="5" fill="none" stroke="#0084F5" stroke-width="1.5"/>
+  </svg>
+  <svg class="circuit" style="bottom:15%;right:5%;width:150px" viewBox="0 0 150 180">
+    <path d="M140 10 H90 V60 H40 V100 H100 V140" stroke="#23F8B2" stroke-width="1.5" fill="none"/>
+    <circle cx="90" cy="60" r="4" fill="none" stroke="#0084F5" stroke-width="1.5"/>
+    <circle cx="40" cy="100" r="4" fill="none" stroke="#0084F5" stroke-width="1.5"/>
+  </svg>
+
+  <div class="hero-content">
+    <img src="../img/Logo horizontal (BRANCA).png" class="hero-logo" alt="Logo">
+    <h1 class="hero-tagline">Inovar,<br>Criar, <span>Fazer.</span></h1>
+    <p class="hero-sub">Laboratório Maker · IFBA Campus Eunápolis</p>
+    <div class="hero-btns">
+      <a href="#historia" class="btn-primary"><span>Conheça nossa história</span></a>
+      <a href="#areas" class="btn-outline">Áreas de atuação</a>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <div class="scroll-mouse"></div>
+  </div>
+</section>
+
+<!-- STATS BANNER -->
+<div class="stats-banner reveal">
+  <div>
+    <div class="stat-number stat-green" data-target="5">0</div>
+    <div class="stat-label">ANOS DE HISTÓRIA</div>
+  </div>
+  <div>
+    <div class="stat-number" data-target="120">0</div>
+    <div class="stat-label">PROJETOS DESENVOLVIDOS</div>
+  </div>
+  <div>
+    <div class="stat-number" data-target="300">0</div>
+    <div class="stat-label">ALUNOS IMPACTADOS</div>
+  </div>
+  <div>
+    <div class="stat-number stat-green" data-target="6">0</div>
+    <div class="stat-label">ÁREAS DE ATUAÇÃO</div>
+  </div>
+</div>
+
+<!-- HISTÓRIA -->
+<section id="historia">
+  <p class="section-label reveal">02 — Nossa trajetória</p>
+  <h2 class="section-title reveal reveal-delay-1">A História do <span>EDUMaker</span></h2>
+  <p class="section-desc reveal reveal-delay-2">Uma jornada de inovação, criatividade e aprendizado colaborativo que transforma a educação no sertão baiano.</p>
+
+  <div class="timeline-wrapper reveal reveal-delay-3">
+    <div class="timeline-nav" id="timelineNav"></div>
+    <div class="timeline-slides" id="timelineSlides"></div>
+    <div class="timeline-controls">
+      <button class="tl-btn" id="tlPrev">&#8592;</button>
+      <button class="tl-btn" id="tlNext">&#8594;</button>
+    </div>
+  </div>
+</section>
+
+<!-- ÁREAS -->
+<section id="areas">
+  <p class="section-label reveal">03 — Especialidades</p>
+  <h2 class="section-title reveal reveal-delay-1">Áreas de <span>Atuação</span></h2>
+  <p class="section-desc reveal reveal-delay-2">Exploramos múltiplas frentes da tecnologia e inovação para formar os makers do futuro.</p>
+
+  <div class="areas-grid" id="areasGrid"></div>
+</section>
+
+<!-- NOTÍCIAS -->
+<section id="noticias">
+  <p class="section-label reveal">04 — Aconteceu no lab</p>
+  <h2 class="section-title reveal reveal-delay-1">Notícias & <span>Comunicados</span></h2>
+  <div class="news-grid reveal reveal-delay-2">
+    <div class="news-featured">
+      <div class="news-featured-img">🚀</div>
+      <span class="news-badge">DESTAQUE</span>
+      <div class="news-date">JUNHO 2025</div>
+      <h3 class="news-featured-title">EDUMaker representa IFBA em Feira Nacional de Inovação Tecnológica</h3>
+      <p class="news-featured-desc">Alunos do laboratório maker apresentaram projetos de robótica e impressão 3D em evento nacional, conquistando reconhecimento e visibilidade para o campus.</p>
+    </div>
+    <div class="news-list">
+      <div class="news-item">
+        <div class="news-item-line"></div>
+        <div class="news-date">MAIO 2025</div>
+        <h4 class="news-title">Novo equipamento: impressora 3D de alta resolução</h4>
+        <p class="news-excerpt">O laboratório recebe equipamento de última geração para projetos avançados.</p>
+      </div>
+      <div class="news-item">
+        <div class="news-item-line"></div>
+        <div class="news-date">ABRIL 2025</div>
+        <h4 class="news-title">Workshop de Robótica abre vagas para comunidade</h4>
+        <p class="news-excerpt">Inscrições abertas para o workshop gratuito destinado a estudantes do ensino médio.</p>
+      </div>
+      <div class="news-item">
+        <div class="news-item-line"></div>
+        <div class="news-date">MARÇO 2025</div>
+        <h4 class="news-title">Parceria com empresa de tecnologia de Salvador</h4>
+        <p class="news-excerpt">Novo convênio vai oferecer estágios e capacitação para alunos do EDUMaker.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato">
+  <p class="section-label reveal">05 — Fale conosco</p>
+  <h2 class="section-title reveal reveal-delay-1">Entre em <span>Contato</span></h2>
+  <div class="contact-grid">
+    <div class="contact-info reveal reveal-delay-2">
+      <div class="contact-item">
+        <div class="contact-icon">📍</div>
+        <div>
+          <div class="contact-label">LOCALIZAÇÃO</div>
+          <div class="contact-value">IFBA Campus Eunápolis<br>Eunápolis — BA</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">✉️</div>
+        <div>
+          <div class="contact-label">E-MAIL</div>
+          <div class="contact-value">edumaker@ifba.edu.br</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">📱</div>
+        <div>
+          <div class="contact-label">WHATSAPP</div>
+          <div class="contact-value">(73) 9 9999-0000</div>
+        </div>
+      </div>
+      <div>
+        <p class="section-label" style="margin-bottom:16px">Redes Sociais</p>
+        <div class="socials">
+          <a href="#" class="social-btn" title="Instagram">📷</a>
+          <a href="#" class="social-btn" title="Facebook">👤</a>
+          <a href="#" class="social-btn" title="YouTube">▶️</a>
+          <a href="#" class="social-btn" title="LinkedIn">💼</a>
+          <a href="#" class="social-btn" title="WhatsApp">💬</a>
+        </div>
+      </div>
+    </div>
+    <div class="contact-form reveal reveal-delay-3">
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Nome</label>
+          <input class="form-input" type="text" placeholder="Seu nome completo" id="fNome">
+        </div>
+        <div class="form-group">
+          <label class="form-label">E-mail</label>
+          <input class="form-input" type="email" placeholder="seu@email.com" id="fEmail">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Assunto</label>
+        <input class="form-input" type="text" placeholder="Como podemos ajudar?" id="fAssunto">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Mensagem</label>
+        <textarea class="form-textarea" placeholder="Sua mensagem..." id="fMsg"></textarea>
+      </div>
+      <button class="btn-send" id="sendBtn">Enviar Mensagem</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-container">
+
+    <div class="footer-logo">
+      <img src="../img/Logo horizontal (BRANCA).png" alt="EDUMaker">
+    </div>
+
+    <div class="footer-info">
+      <p>EDUMaker - IFBA Campus Eunápolis</p>
+    </div>
+
+  </div>
+</footer>
+<script src="../js/script.js"></script>
+</body>
+</html>
